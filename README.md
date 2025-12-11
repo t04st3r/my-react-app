@@ -140,26 +140,32 @@ Open your browser at `http://localhost:5173`
 
 ### Step 1: Understanding the Starter Code
 
-Open `src/App.tsx`. You'll see a basic React component:
+Open `src/component/HelloWorld.tsx`. You'll see a basic React component:
 
 ```typescript
-function App() {
-  return <h1>Hello World</h1>;
+import './HelloWorld.scss';
+
+function HelloWorld() {
+  return (
+    <div className="hello-world">
+      <h1>Hello, world!</h1>
+    </div>
+  );
 }
 
-export default App;
+export default HelloWorld;
 ```
 
 **Key concepts:**
-- **Component**: `App` is a function component (like a Python function that returns JSX)
-- **JSX**: `<h1>Hello World</h1>` looks like HTML but is JavaScript
+- **Component**: `HelloWorld` is a function component (like a Python function that returns JSX)
+- **JSX**: `<div className="hello-world"><h1>Hello, world!</h1></div>` looks like HTML but is JavaScript
 - **Export**: Makes the component available to other files
 
 **Python parallel:**
 ```python
 # Like a Python function that returns a template
-def app():
-    return "<h1>Hello World</h1>"
+def hello_world():
+    return '<div className="hello-world"><h1>Hello, world!</h1></div>'
 ```
 
 ---
