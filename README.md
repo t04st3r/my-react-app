@@ -165,7 +165,7 @@ export default HelloWorld;
 ```python
 # Like a Python function that returns a template
 def hello_world():
-    return '<div className="hello-world"><h1>Hello, world!</h1></div>'
+    return '<div class="hello-world"><h1>Hello, world!</h1></div>'
 ```
 
 ---
