@@ -1,0 +1,47 @@
+.response-container {
+  margin-top: 16px;
+}
+
+.status-bar {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid #333;
+  background-color: #1a1a1a;
+
+  &.status-idle {
+    color: #666;
+  }
+
+  &.status-loading {
+    color: #ffa500;
+  }
+
+  &.status-success {
+    color: #4caf50;
+  }
+
+  &.status-error {
+    color: #f44336;
+  }
+}
+
+.response-box {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 0 0 4px 4px;
+  padding: 16px;
+  max-height: 500px;
+  overflow: auto;
+
+  pre {
+    color: #d4d4d4;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}

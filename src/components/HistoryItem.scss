@@ -1,0 +1,62 @@
+.history-item {
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #333;
+    border-color: #007acc;
+  }
+
+  &.active {
+    background-color: #1a3a52;
+    border-color: #007acc;
+  }
+}
+
+.history-item-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.history-status {
+  font-size: 12px;
+  font-weight: bold;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  &.success {
+    color: #4caf50;
+    background-color: rgba(76, 175, 80, 0.1);
+  }
+
+  &.error {
+    color: #f44336;
+    background-color: rgba(244, 67, 54, 0.1);
+  }
+}
+
+.history-url {
+  color: #d4d4d4;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history-timestamp {
+  color: #666;
+  font-size: 11px;
+  margin-left: 24px;
+}
