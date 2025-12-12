@@ -623,7 +623,7 @@ export interface ApiRequest {
 
 ```typescript
 import './HistoryItem.scss';
-import { ApiRequest } from '../types/ApiRequest';
+import type { ApiRequest } from '../types/ApiRequest';
 
 interface HistoryItemProps {
   request: ApiRequest;
@@ -722,7 +722,7 @@ export default HistoryItem;
 
 ```typescript
 import './HistoryPanel.scss';
-import { ApiRequest } from '../types/ApiRequest';
+import type { ApiRequest } from '../types/ApiRequest';
 import HistoryItem from './HistoryItem';
 
 interface HistoryPanelProps {
@@ -805,7 +805,7 @@ import './App.scss';
 import ResponseDisplay from './components/ResponseDisplay';
 import InputField from './components/InputField';
 import HistoryPanel from './components/HistoryPanel';
-import { ApiRequest } from './types/ApiRequest';
+import type { ApiRequest } from './types/ApiRequest';
 
 function App() {
   const [url, setUrl] = useState<string>('');
@@ -1046,7 +1046,7 @@ function InputField({ value, onChange, onSubmit, disabled }: InputFieldProps) {
         type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        onKeyPress={handleKeyPress}
+        onKeyDown={handleKeyPress}
         placeholder="Enter API endpoint (e.g., https://api.github.com/users/github)"
         className={`url-input ${!isValid ? 'invalid' : ''}`}
         disabled={disabled}
@@ -1115,7 +1115,7 @@ export default InputField;
 
 ```typescript
 import './HistoryItem.scss';
-import { ApiRequest } from '../types/ApiRequest';
+import type { ApiRequest } from '../types/ApiRequest';
 import { truncateUrl } from '../utils/helpers';
 
 interface HistoryItemProps {
@@ -1150,7 +1150,7 @@ export default HistoryItem;
 
 ```typescript
 import './HistoryPanel.scss';
-import { ApiRequest } from '../types/ApiRequest';
+import type { ApiRequest } from '../types/ApiRequest';
 import HistoryItem from './HistoryItem';
 
 interface HistoryPanelProps {
@@ -1264,7 +1264,7 @@ import './App.scss';
 import ResponseDisplay from './components/ResponseDisplay';
 import InputField from './components/InputField';
 import HistoryPanel from './components/HistoryPanel';
-import { ApiRequest } from './types/ApiRequest';
+import type { ApiRequest } from './types/ApiRequest';
 import { isValidUrl } from './utils/helpers';
 
 function App() {
